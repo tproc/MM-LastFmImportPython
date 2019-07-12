@@ -471,16 +471,7 @@ class User(LastfmBase):
     @staticmethod
     def get_info(api, name):
         user = User(api, name = name)
-        friends = user.friends
-        if len(friends) == 0:
-            return user
-        else:
-            f = friends[0]
-            try:
-                user = [a for a in f.friends if a.name == user.name][0]
-                return user
-            except IndexError:
-                return user
+        return user
         
     @staticmethod
     def get_authenticated_user(api):
