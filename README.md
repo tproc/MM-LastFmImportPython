@@ -1,7 +1,9 @@
 Mediamonkey LastFMImporter
 ============================
-At this stage I no longer have the time/interest in maintaining this - as I don't use Mediamonkey myself any longer.
-If you need help in getting this running with python directly, or any help with dev'ing it further, feel free to open an issue.
+
+I forked this repository from Psykar who did all the hard work developing this. Since Psykar is no longer using Mediamonkey and Last.FM had updated their API, I made a small update to this plugin to get it working again for me.
+
+MediaMonkey 5 is released and is incompatible with this plugin as-is, and my knowledge of Python is limited. The code also appears to be dependent on a version of Python that has reached end of life, so I am currently working on a Javascript implementation of this plugin for the new Mediamonkey API: https://github.com/tproc/MM5-LastFmImport
 
 ---
 
